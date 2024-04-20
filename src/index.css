@@ -1,0 +1,75 @@
+*{
+    font-family:"Karla";
+    user-select: none;
+    color: #ECC30B;
+}
+/* Estilos para el input */
+input[type=number].hide-arrows::-webkit-inner-spin-button,
+input[type=number].hide-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number].hide-arrows {
+  -moz-appearance: textfield;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
+  text-shadow: 0 0 2px black;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+i:hover {
+  cursor: pointer;
+}
+i {
+  font-size: 2rem;
+}
+#time-left{
+  font-size: 2rem;
+  color: #ECC30B;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+  background-image: url(assets/eberhard-grossgasteiger-fG-TC4CO4lQ-unsplash.jpg);
+  background-size: cover;
+  padding: 5em;
+  border-radius: 50%;
+  text-shadow: 0 0 2px black;
+  border: 1px solid black;
+}
+.handle-container {
+  display: flex;
+  gap: 3em;
+}
+.break-container {
+  text-align: center;
+}
+.session-container {
+  text-align: center;
+}
+.display-container i {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+h1 {
+  font-size: 2.25em;
+}
+h2,h1 {
+  margin: 0.75em 0;
+}
+#time-left {
+  background-color: #ECC30B;
+  border-radius: 1em;
+}
