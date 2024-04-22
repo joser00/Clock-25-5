@@ -1,5 +1,4 @@
 import React from "react";
-import ReactAudioPlayer from "react-audio-player";
 export default function App() {
   const [minutsSession, setMinutsSession] = React.useState(25);
   const [minutsBreak, setMinutsBreak] = React.useState(5);
@@ -208,13 +207,7 @@ export default function App() {
             onClick={resetValues}
           ></i>
         </div>
-        {audio && (
-          <ReactAudioPlayer
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"
-            autoPlay
-            onEnded={() => setAudio(false)}
-          />
-        )}
+        {audio && <audio id = "beep" autoPlay src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav" onEnded={() => setAudio(false)}></audio>}
       </div>
     </div>
   );
